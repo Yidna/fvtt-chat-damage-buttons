@@ -11,3 +11,5 @@ Current Issues:
 - the dice-tooltip event is also triggered when a button is clicked
 
 If you have any suggestions or feedback, please contact me on discord (hooking#0492)
+
+Shoutout to Felix#6196 for the Spell-Browser module I used as an example of how to use hooks and modify the HTML appropirately.
