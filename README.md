@@ -8,4 +8,4 @@ Current Issues:
 - styling is sub-optimal
 - the dice-tooltip event is also triggered when a button is clicked
 
-If you have any suggestions or feedback, please contact me on discord (@hooking#0492)
+If you have any suggestions or feedback, please contact me on discord (hooking#0492)
