@@ -1,6 +1,8 @@
 # Chat Damage Buttons (5e)
 
-This module replaces the right-click context menu with buttons on the dice-roll chat message.
+This module replaces the right-click context menu with buttons on the dice-roll chat message. 
+- I believe the workflow for applying damage to tokens is smoother with buttons compared to the right-click context menu method.
+- There is a bug with the right-click context menu currently when using the bottom most chat-message. This approach provides a work around for this issue.
 
 ![example](preview.jpg)
 
