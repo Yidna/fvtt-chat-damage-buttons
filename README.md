@@ -7,7 +7,7 @@ This module replaces the right-click context menu with buttons on the dice-roll 
 ![example](preview.jpg)
 
 ### Current Issues:
-- styling is sub-optimal
+- No known issues (give me your feedback!)
 
 ### Installation Instructions
 
@@ -21,4 +21,4 @@ To install a module, follow these instructions:
 
 If you have any suggestions or feedback, please contact me on discord (hooking#0492)
 
-Shoutout to Felix#6196 for the Spell-Browser module I used as an example of how to use hooks and modify the HTML appropirately.
+Shoutout to Felix#6196 for the Spell-Browser module I used as an example of how to use hooks and modify the HTML appropirately. Also huge thanks again for helping to style the buttons elegantly, a huge help!
