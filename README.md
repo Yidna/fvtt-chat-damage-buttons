@@ -14,7 +14,7 @@ This module replaces the right-click context menu with buttons on the dice-roll 
 
 To install a module, follow these instructions:
 
-1. [Download the zip file](https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons/blob/master/chatdamagebuttons5e.zip) included in the module directory. If one is not provided, the module is still in early development.
+1. [Download the zip file](https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons/raw/master/chatdamagebuttons5e.zip) included in the module directory. If one is not provided, the module is still in early development.
 2. Extract the included folder to `public/modules` in your Foundry Virtual Tabletop installation folder.
 3. Restart Foundry Virtual Tabletop.  
 
