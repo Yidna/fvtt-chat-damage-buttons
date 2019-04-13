@@ -8,7 +8,6 @@ This module replaces the right-click context menu with buttons on the dice-roll 
 
 ### Current Issues:
 - styling is sub-optimal
-- the dice-tooltip event is also triggered when a button is clicked
 
 ### Installation Instructions
 
