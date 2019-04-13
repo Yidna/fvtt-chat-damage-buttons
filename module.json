@@ -2,7 +2,7 @@
 	"name": "chatdamagebuttons5e",
 	"title": "Chat Damage Buttons 5e",
 	"description": "This module will add damage buttons on damage roll chat cards to easily apply damage to tokens",
-	"version": "0.1",
+	"version": "0.2",
 	"author": "hooking",
 	"systems": ["dnd5e"],
 	"scripts": ["./chatdamagebuttons5e.js"],

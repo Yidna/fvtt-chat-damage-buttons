@@ -14,11 +14,13 @@ class ChatDamageButtons5e extends Application {
             const fullDamageButton = $('<button class="dice-total-fullDamage-btn" style="max-width: 10%;"><i class="fas fa-user-minus" title="Click to apply full damage to selected token(s)."></i></button>');
             const halfDamageButton = $('<button class="dice-total-halfDamage-btn" style="max-width: 10%;"><i class="fas fa-user-shield" title="Click to apply half damage to selected token(s)."></i></button>');
             const doubleDamageButton = $('<button class="dice-total-doubleDamage-btn" style="max-width: 10%;"><i class="fas fa-user-injured" title="Click to apply double damage to selected token(s)."></i></button>');
+            const fullHealingButton = $('<button class="dice-total-fullHealing-btn" style="max-width: 10%;"><i class="fas fa-user-plus" title="Click to apply full healing to selected token(s)."></i></button>');
 
             if (game.user.isGM) {
                 html.find('.dice-total').append(fullDamageButton);
                 html.find('.dice-total').append(halfDamageButton);
                 html.find('.dice-total').append(doubleDamageButton);
+                html.find('.dice-total').append(fullHealingButton);
 
                 // Handle button clicks
                 fullDamageButton.click(ev => {
@@ -34,6 +36,11 @@ class ChatDamageButtons5e extends Application {
                 doubleDamageButton.click(ev => {
                     ev.preventDefault();
                     Actor5e.applyDamage(html, 2);
+                });
+
+                fullHealingButton.click(ev => {
+                    ev.preventDefault();
+                    Actor5e.applyDamage(html, -1);
                 });
             }
 
