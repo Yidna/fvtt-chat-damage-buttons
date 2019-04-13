@@ -1,14 +1,12 @@
 class ChatDamageButtons5e extends Application {
     constructor(app) {
         super(app);
-        console.log(" *** loaded Chat Damage Buttons 5e constructor ***");
     }
 
     init () {
 
-        console.log(" *** initialised Chat Damage Buttons 5e module ***");
-
         Hooks.on('renderChatMessage', (message, data, html) => {
+            // do nothing if this is not a roll chat-message or if the roll is a d20 (as that is likely to be an attack roll)
             if ( !message.isRoll || message.roll.parts[0].faces == 20 ) return;
 
             const fullDamageButton = $('<button class="dice-total-fullDamage-btn" style="max-width: 10%;"><i class="fas fa-user-minus" title="Click to apply full damage to selected token(s)."></i></button>');
@@ -24,29 +22,25 @@ class ChatDamageButtons5e extends Application {
 
                 // Handle button clicks
                 fullDamageButton.click(ev => {
-                    ev.preventDefault();
+                    ev.stopPropagation();
                     Actor5e.applyDamage(html, 1);
                 });
                 
                 halfDamageButton.click(ev => {
-                    ev.preventDefault();
+                    ev.stopPropagation();
                     Actor5e.applyDamage(html, 0.5);
                 });
 
                 doubleDamageButton.click(ev => {
-                    ev.preventDefault();
+                    ev.stopPropagation();
                     Actor5e.applyDamage(html, 2);
                 });
 
                 fullHealingButton.click(ev => {
-                    ev.preventDefault();
+                    ev.stopPropagation();
                     Actor5e.applyDamage(html, -1);
                 });
             }
-
-            //note to self: make damage chat messages red to distinguish them. 
-            //look to make attack hits and misses different colours with Crits and Fumbles bold versions of them. 
-            //add damage and half damage buttons and link up the events hook.
 
         })
     }
