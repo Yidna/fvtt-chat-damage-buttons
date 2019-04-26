@@ -4,7 +4,7 @@ This module replaces the right-click context menu with buttons on the dice-roll 
 - I believe the workflow for applying damage to tokens is smoother with buttons compared to the right-click context menu method.
 - There is a bug with the right-click context menu currently when using the bottom most chat-message. This approach provides a work around for this issue.
 
-![example](preview.jpg)
+![example](preview.gif)
 
 ### Current Issues:
 - No known issues (give me your feedback!)
