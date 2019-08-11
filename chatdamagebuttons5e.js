@@ -25,22 +25,22 @@ class ChatDamageButtons5e extends Application {
             // Handle button clicks
             fullDamageButton.click(ev => {
                 ev.stopPropagation();
-                Actor5e.applyDamage(html, 1);
+                CONFIG.Actor.entityClass.applyDamage(html, 1);
             });
               
             halfDamageButton.click(ev => {
                 ev.stopPropagation();
-                Actor5e.applyDamage(html, 0.5);
+                CONFIG.Actor.entityClass.applyDamage(html, 0.5);
             });
 
             doubleDamageButton.click(ev => {
                 ev.stopPropagation();
-                Actor5e.applyDamage(html, 2);
+                CONFIG.Actor.entityClass.applyDamage(html, 2);
             });
 
             fullHealingButton.click(ev => {
                 ev.stopPropagation();
-                Actor5e.applyDamage(html, -1);
+                CONFIG.Actor.entityClass.applyDamage(html, -1);
             });
 
         })
