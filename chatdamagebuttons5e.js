@@ -5,44 +5,46 @@ class ChatDamageButtons5e extends Application {
 
     init () {
 
-        Hooks.on('renderChatMessage', (message, data, html) => {
-            if ( !message.isRoll || message.roll.parts[0].faces == 20 ) return;
-            let btnStyling = 'width: 22px; height:22px; font-size:10px;line-height:1px';
+        Hooks.on('renderChatMessage', (message, data, html) => {            
 
-            const fullDamageButton = $(`<button class="dice-total-fullDamage-btn" style="${btnStyling}"><i class="fas fa-user-minus" title="Click to apply full damage to selected token(s)."></i></button>`);
-            const halfDamageButton = $(`<button class="dice-total-halfDamage-btn" style="${btnStyling}"><i class="fas fa-user-shield" title="Click to apply half damage to selected token(s)."></i></button>`);
-            const doubleDamageButton = $(`<button class="dice-total-doubleDamage-btn" style="${btnStyling}"><i class="fas fa-user-injured" title="Click to apply double damage to selected token(s)."></i></button>`);
-            const fullHealingButton = $(`<button class="dice-total-fullHealing-btn" style="${btnStyling}"><i class="fas fa-user-plus" title="Click to apply full healing to selected token(s)."></i></button>`);
+            if ( !message.isRoll || message.roll.parts[0].faces == 20) return
+            
+                let btnStyling = 'width: 22px; height:22px; font-size:10px;line-height:1px';
 
-            const btnContainer = $('<span class="dmgBtn-container" style="position:absolute; right:0; bottom:1px;"></span>');
-            btnContainer.append(fullDamageButton);
-            btnContainer.append(halfDamageButton);
-            btnContainer.append(doubleDamageButton);
-            btnContainer.append(fullHealingButton);
+                const fullDamageButton = $(`<button class="dice-total-fullDamage-btn" style="${btnStyling}"><i class="fas fa-user-minus" title="Click to apply full damage to selected token(s)."></i></button>`);
+                const halfDamageButton = $(`<button class="dice-total-halfDamage-btn" style="${btnStyling}"><i class="fas fa-user-shield" title="Click to apply half damage to selected token(s)."></i></button>`);
+                const doubleDamageButton = $(`<button class="dice-total-doubleDamage-btn" style="${btnStyling}"><i class="fas fa-user-injured" title="Click to apply double damage to selected token(s)."></i></button>`);
+                const fullHealingButton = $(`<button class="dice-total-fullHealing-btn" style="${btnStyling}"><i class="fas fa-user-plus" title="Click to apply full healing to selected token(s)."></i></button>`);
 
-            html.find('.dice-total').append(btnContainer);
+                const btnContainer = $('<span class="dmgBtn-container" style="position:absolute; right:0; bottom:1px;"></span>');
+                btnContainer.append(fullDamageButton);
+                btnContainer.append(halfDamageButton);
+                btnContainer.append(doubleDamageButton);
+                btnContainer.append(fullHealingButton);
 
-            // Handle button clicks
-            fullDamageButton.click(ev => {
-                ev.stopPropagation();
-                CONFIG.Actor.entityClass.applyDamage(html, 1);
-            });
-              
-            halfDamageButton.click(ev => {
-                ev.stopPropagation();
-                CONFIG.Actor.entityClass.applyDamage(html, 0.5);
-            });
+                html.find('.dice-total').append(btnContainer);
 
-            doubleDamageButton.click(ev => {
-                ev.stopPropagation();
-                CONFIG.Actor.entityClass.applyDamage(html, 2);
-            });
+                // Handle button clicks
+                fullDamageButton.click(ev => {
+                    ev.stopPropagation();
+                    CONFIG.Actor.entityClass.applyDamage(html, 1);
+                });
+                
+                halfDamageButton.click(ev => {
+                    ev.stopPropagation();
+                    CONFIG.Actor.entityClass.applyDamage(html, 0.5);
+                });
 
-            fullHealingButton.click(ev => {
-                ev.stopPropagation();
-                CONFIG.Actor.entityClass.applyDamage(html, -1);
-            });
+                doubleDamageButton.click(ev => {
+                    ev.stopPropagation();
+                    CONFIG.Actor.entityClass.applyDamage(html, 2);
+                });
 
+                fullHealingButton.click(ev => {
+                    ev.stopPropagation();
+                    CONFIG.Actor.entityClass.applyDamage(html, -1);
+                });
+            
         })
     }
 }
