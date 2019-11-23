@@ -5,7 +5,7 @@ class ChatDamageButtons5e extends Application {
 
     init () {
 
-        Hooks.on('renderChatMessage', (message, data, html) => {            
+        Hooks.on('renderChatMessage', (message, html, data) => {            
 
             if ( !message.isRoll || message.roll.parts[0].faces == 20) return
             
