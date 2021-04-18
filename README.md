@@ -20,3 +20,7 @@ To install a module, follow these instructions:
 ### Feedback
 
 If you have any suggestions or feedback, feel free to create an [Issue on Github](https://github.com/Yidna/fvtt-simple-chat-damage-buttons/issues)
+
+<a href="https://ko-fi.com/dndyidna">
+    <img src="https://uc5eb273fe68d95fbc1612678c7a.previews.dropboxusercontent.com/p/thumb/ABKvSYf3oW_lV-UtsE8ASLhcmgoAOhXmXlKO505XsllDRhilP8CjrxKKIQlPCNuUL95y74j6AWuVU1hoqv74fttZyi4DQLWApzTRD2GoS05zxVpfQpO4EqHq_NenqnwkcUq0YgEwuYniTTooArIJJIMd5Rc0MjKSRYNYaj3X0dOZBZGJNxqkPSSgG8C86PiQHkTJBexshgiXFpziottbD_AcG1WAVReWPT2ynGwa6Nc3-2KUJF1-fNmgCbKa8VuUTskV9YMh816Hm9HkbwcScl2d6t_NgsqWJ-lTBIZOCvC5ob3xZKhjihxeDy5s3EEwqFKxd4PiYu8Nws0ipsVfl5v9COkylWhSzzGcNfDDYoWUtA/p.png?fv_content=true&size_mode=5" width="300" alt="Buy me a coffee"/>
+</a>
