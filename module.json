@@ -5,6 +5,11 @@
 	"version": "1.0.0",
 	"minimumCoreVersion": "0.7.9",
 	"author": "Yidna",
+	"systems": ["dnd5e"],
 	"scripts": ["index.js"],
-	"url": "https://github.com/Yidna/fvtt-simple-chat-damage-buttons"
+	"packs": [],
+	"styles": [],
+	"url": "https://github.com/Yidna/fvtt-simple-chat-damage-buttons",
+	"manifest": "https://raw.githubusercontent.com/Yidna/fvtt-simple-chat-damage-buttons/master/module.json",
+	"download": "https://github.com/Yidna/fvtt-simple-chat-damage-buttons/archive/refs/heads/master.zip"
 }
