@@ -1,4 +1,4 @@
-class ChatDamageButtons5e extends Application {
+class SimpleChatDamageButtons5e extends Application {
     constructor(app) {
         super(app);
     }
@@ -49,5 +49,5 @@ class ChatDamageButtons5e extends Application {
     }
 }
 
-let chatButtons = new ChatDamageButtons5e();
+let chatButtons = new SimpleChatDamageButtons5e();
 chatButtons.init();

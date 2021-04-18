@@ -1,14 +1,12 @@
 {
-	"name": "chatdamagebuttons5e",
-	"title": "Chat Damage Buttons 5e",
-	"description": "This module will add damage buttons on damage roll chat cards to easily apply damage to tokens",
-	"version": "1.2",
-	"minimumCoreVersion": "0.4.5",
-	"author": "hooking",
-	"scripts": ["./chatdamagebuttons5e.js"],
-	"styles": [],
-	"packs": [],
-	"url": "https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons/blob/master/README.md",
-	"manifest": "https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons/blob/master/module.json",
-	"download": "https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons/-/archive/master/foundry-vtt---chat-damage-buttons-master.zip"
+	"name": "simple-chat-damage-buttons-5e",
+	"title": "Simple Chat Damage Buttons 5e",
+	"description": "This module adds buttons on damage roll chat cards to apply damage to tokens",
+	"version": "1.0.0",
+	"minimumCoreVersion": "0.7.9",
+	"author": "Yidna",
+	"scripts": ["./simple-chat-damage-buttons-5e.js"],
+	"url": "https://github.com/Yidna/fvtt-simple-chat-damage-buttons",
+	"manifest": "https://raw.githubusercontent.com/Yidna/fvtt-simple-chat-damage-buttons/master/module.json",
+	"download": ""
 }
