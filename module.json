@@ -4,6 +4,7 @@
 	"description": "This module adds buttons on damage roll chat cards to apply damage to tokens",
 	"version": "1.0.0",
 	"minimumCoreVersion": "0.7.9",
+	"compatibleCoreVersion": "0.7.9",
 	"author": "Yidna",
 	"systems": ["dnd5e"],
 	"scripts": ["index.js"],
