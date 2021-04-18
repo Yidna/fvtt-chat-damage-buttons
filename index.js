@@ -9,7 +9,7 @@ Hooks.on('renderChatMessage', (message, html) => {
         'height: 22px;',
         'font-size: 10px;',
         'line-height: 1px;'
-    ].join();
+    ].join('');
 
     const fullDamageButton = $(`<button class="dice-total-fullDamage-btn" style="${btnStyling}"><i class="fas fa-user-minus" title="Apply full damage"></i></button>`);
     const halfDamageButton = $(`<button class="dice-total-halfDamage-btn" style="${btnStyling}"><i class="fas fa-user-shield" title="Apply half damage"></i></button>`);

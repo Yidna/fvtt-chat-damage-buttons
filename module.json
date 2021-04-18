@@ -2,7 +2,7 @@
 	"name": "simple-chat-damage-buttons-5e",
 	"title": "Simple Chat Damage Buttons 5e",
 	"description": "This module adds buttons on damage roll chat cards to apply damage to tokens",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minimumCoreVersion": "0.7.9",
 	"compatibleCoreVersion": "0.7.9",
 	"author": "Yidna",
